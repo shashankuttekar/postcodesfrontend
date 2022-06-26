@@ -1,6 +1,6 @@
 # Introduction
 
-It is a single page application using React JS that consumes the PostCodes Web API and presenting a autocomplet functionality to search post codes. The user should able to select a result from the autocomplete which gives the details for selected post code. Post code detail is a below: 
+This is React JS single page application that consumes the PostCodes Web API and presenting a autocomplet functionality to search post codes. The user should able to select a result from the autocomplete which gives the details for selected post code. Post code detail is a below: 
 1.  Country
 2.	Region
 3.	Admin District
