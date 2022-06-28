@@ -5,7 +5,8 @@ import { Alert } from "react-bootstrap";
 import React, { useState } from "react";
 import { postcodes_base_url } from "../AppConfig";
 
-
+//This is postal code search component. 
+//It uses debounce to delay api call so that user can complete his typing and get back result.
 export default function PostalCodeSearch(props){
   const minLengthAutocomplete = 1;
   
@@ -39,7 +40,7 @@ export default function PostalCodeSearch(props){
   }
 
   return (
-      <React.Fragment>
+      <div style={{width:"300px"}}>
          { noData && <Alert key={"warning"} variant={"warning"}>
             No data found!
           </Alert> }
@@ -47,8 +48,9 @@ export default function PostalCodeSearch(props){
             loadOptions={fetchSuggestions} 
             onChange={handleSelectSuggest}
             placeholder={'Please type post code here'}
+            
           />
-      </React.Fragment>
+      </div>
   )
 
 }

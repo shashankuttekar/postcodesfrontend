@@ -1,5 +1,6 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 
+//This function show the details for postcode selected from lookup.
 export default function PostalDetails(props) {
   const { postalData } = props;
   const marginTop = { marginTop: "10px" };
@@ -38,7 +39,7 @@ export default function PostalDetails(props) {
                       <Card.Body>
                           <Card.Title> Admin District </Card.Title>
                           <Card.Text>
-                              {  postalData.codes.adminDistrict}
+                              {  postalData.admin_district}
                           </Card.Text>
                       </Card.Body>
                   </Card>
@@ -48,7 +49,7 @@ export default function PostalDetails(props) {
                       <Card.Body>
                           <Card.Title> Parliamentary Constituency </Card.Title>
                           <Card.Text>
-                              {  postalData.codes.parliamentaryConstituency}
+                              {  postalData.parliamentary_constituency}
                           </Card.Text>
                       </Card.Body>
                   </Card>
